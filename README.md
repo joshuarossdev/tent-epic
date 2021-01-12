@@ -1,1 +1,1 @@
-# tent-epic
+# tent-epic-mvp
