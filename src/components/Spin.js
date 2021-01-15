@@ -16,7 +16,7 @@ export default function Spin() {
 
   return (
     <div className="Spin">
-      Spin
+      Spin Container
       <div className="bearing">
         {randomBearing(compassSectors)}
       </div>
