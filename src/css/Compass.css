@@ -1,0 +1,15 @@
+.Compass-container {
+  background-color: burlywood;
+  height: 40vh;
+}
+
+.Compass {
+  background-color: lightslategrey;
+  height: 30vh;
+}
+
+.Spin {
+  background-color: mediumorchid;
+  height: 20vh;
+
+}

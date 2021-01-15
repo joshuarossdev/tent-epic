@@ -1,4 +1,5 @@
 import '../css/App.css';
+import Compass from "./Compass"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       </header>
       <main className='App-main'>
         Main Container
+        <Compass/>
       </main>
       <footer className="App-footer">
         Footer
