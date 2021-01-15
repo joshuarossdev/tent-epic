@@ -4,8 +4,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello World!
+        Header
       </header>
+      <main className='App-main'>
+        Main Container
+      </main>
+      <footer className="App-footer">
+        Footer
+      </footer>
     </div>
   );
 }
