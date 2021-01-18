@@ -1,25 +1,19 @@
+
+import React, {useState} from 'react'
 import '../css/Spin.css'
-import React from 'react'
 
 export default function Spin() {
-  let compassSectors = {
-    north: true,
-    northEast: true,
-    east: true,
-    southEast: true,
-    south: true,
-    southWest: true,
-    west: true,
-    northWest: true
-  }
-  let lat = 33.7
-  let long = 117.8
-  let distance = 100
-  let bearing = generateBearing(compassSectors)
-  let destination = convertToPosition(lat, long, bearing, distance)
+
+  const [bearing, setBearing] = useState("SPIN")
+
+
+  const lat = 33.7
+  const long = -117.8
+  const distance = 100
+  const destination = convertToPosition(lat, long, bearing, distance)
   console.log("destination: ", destination)
   return (
-    <div className="Spin">
+    <div className="Spin" onClick={() => setBearing( generateBearing() )}>
       Spin Container
       <div className="bearing">
         {bearing}
@@ -34,7 +28,17 @@ export default function Spin() {
   )
 }
 
-function generateBearing(compassSectors) {
+function generateBearing() {
+  const compassSectors = {
+    north: true,
+    northEast: true,
+    east: true,
+    southEast: true,
+    south: true,
+    southWest: true,
+    west: true,
+    northWest: true
+  }
   console.log('compassSectors: ', compassSectors)
   return Math.floor(Math.random() * 360)
 }
