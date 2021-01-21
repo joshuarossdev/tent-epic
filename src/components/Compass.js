@@ -8,7 +8,6 @@ export default function Compass() {
   const long = -117.8
   const distance = 100
   const destination = convertToPosition(lat, long, bearing, distance)
-  console.log("destination: ", destination)
   return (
     <>
       <div className="Compass-container">
